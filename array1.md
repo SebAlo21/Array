@@ -1,8 +1,20 @@
 
 # ![Javascript](imagenes/header.png)
-
+### Introduccion
+[Definicion y creacion de un ARRAY](#arrayarreglos)    
+[Seleccion de elementos](#seleccion-de-elementos-de-un-array)  
 ### Metodos BASICOS
-
+* [PUSH](#arraypush)  
+* [POP](#arraypop)    
+* [UNSHIFT](#arrayunshift)    
+* [SHIFT](#arrayshift)    
+* [REVERSE](#arrayreverse)    
+* [SPLIT](#stringsplit)   
+* [SORT](#arraysort)  
+* [JOIN](#arrayjoin)  
+* [INDEXOF](#arrayindexof)    
+* [SPLICE](#arraysplice)
+---
 # Array/arreglos
 
 Array es una objeto global de **Javascript** que almacena valores del mismo tipo, llamadas listas de alto nivel.
@@ -242,4 +254,25 @@ array.indexOf(Element,Indice_desde);
     array.indexOf(9, 2);  // 2
     array.indexOf(2, -1); // -1
     array.indexOf(2, -3); // 0
+```
+# Array.splice
+
+> Metodo que cambia el contenido de un array eliminando elementos existentes y/o  agregando nuevos.
+
+### `Sintaxis`
+
+```js
+array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+```
+* `start` : Indice donde se cambiara el o los elementos.
+* `deleteCount` : un numero entero que indica la cantidad de elemntos que van a cambiar en el array antiguo.
+* `item1` : elementos que se agregaran al array.Si no se indica item unicamente se eliminara el elemento.
+---
+
+```js
+var myFish = ['angel', 'clown', 'drum', 'sturgeon'];
+var removed = myFish.splice(2, 1, 'trumpet');
+
+// myFish is ["angel", "clown", "trumpet", "sturgeon"]
+// removed is ["drum"]
 ```
