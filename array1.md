@@ -17,10 +17,13 @@
 ---
 # Array/arreglos
 
-Array es una objeto global de **Javascript** que almacena valores del mismo tipo, llamadas listas de alto nivel.
->Contiene varios elementos del mismo tipo.
->Cada elemento esta asociado a un indice.
+Array es una objeto global de **Javascript** que almacena datos (independenntemente del tipo que sea), llamadas listas de alto nivel.
 
+```javascript
+    var e=[1,true,{name:"Ryan",surname:"Rick"},false]
+```
+>Cada elemento esta asociado a un indice.   
+![array index](imagenes/descarga.jpeg)
 # Creacion de Array
 
 >Declaracion de array y datos de la lista:
